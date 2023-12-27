@@ -137,6 +137,26 @@ body{
     border: 3px solid #434184;
 }
 
+.media-icons{
+    display: flex;
+    flex-direction: row;
+    margin-top:40px;
+
+}
+
+.media-icons a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.media-icons a + a{
+    margin-left:15px;
+
+}
+
 .second{
     height:100vh;
     padding-top:20px;
@@ -225,6 +245,24 @@ body{
 
 .second-seperator div + div{
     margin-left:10vw;
+}
+
+.second-stext{
+    text-align: center;
+}
+
+.second-header{
+    font-size:20px;
+    color: #434184;
+    font-weight: 600;
+}
+
+.mission, .vision{
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:40px;
+    padding-right:40px;
+    font-weight:700;
 }
 
 @media screen and (max-width:1421px){
