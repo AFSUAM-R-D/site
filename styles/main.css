@@ -132,7 +132,8 @@ body{
 
 .main-photo{
     float:left;
-    height:45vh;
+    max-height:45vh;
+    min-height:300px;
     margin-right:100px;
     border-radius:20px;
     border: 3px solid #434184;
