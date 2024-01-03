@@ -1,0 +1,151 @@
+<body>
+<!DOCTYPE html>
+
+<html lang="tr">
+
+<head>
+
+    <!-- META ETİKETLERİ * TARAYICI İŞİ -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="AFSUAM, İzmir Katip Çelebi Üniversitesi öncülüğünde kurulan ve akıllı fabrikalar, yapay zeka ve nesnelerin interneti gibi alanlarda disiplinler arası çalışmalar yürüten bir araştırma ve geliştirme merkezidir.">
+    <meta name="keywords" content="afsuam, fabrika, akıllı sistemler, sanayi, ikcu, ikçü, afsuamrd, sistemler, araştırma merkezi, araştırma, agv, teknofest, teknoloji">
+    <meta name="author" content=" AFSUAM R&D | Bize Katıl">
+
+    <!-- HTML İÇİNE ATILACAK KISIMLAR -->
+
+    <link rel="icon" type="image/x-icon" href="./assets/logo.webp"> 
+
+    <title>AFSUAM R&D | Bize Katıl</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <!--<script src="https://unpkg.com/feather-icons"></script>-->
+
+</head>
+
+<body>
+
+    <div class="menu">
+        <a href="./index.html#hakkımızda"><b>Hakkımızda</b></a> 
+        <a href="./index.html#ürünlerimiz"><b>Takımlarımız</b></a>   
+        <a href="./index.html#başarılarımız"><b>Projelerimiz</b></a>
+        <a href="./index.html#topluluk"><b>Başarılarımız</b></a>
+        <a href="./index.html#iletişim"><b>İletişim</b></a>
+        <a href="./index.html"><b>Anasayfa</b></a>
+    </div>
+
+    <div class="mobile">
+
+    </div>
+
+    <div class="non-mobile">
+        <div class="top">
+
+            <div class="top-left">
+                <img src="./assets/logoafsuam.png" alt="afsuam logo">
+            </div>
+
+            <div class="top-center">
+                <a href="./index.html#hakkımızda"><b>Hakkımızda</b></a>
+                <a href="./index.html#takımlarımız"><b>Takımlarımız</b></a>
+                <a href="./index.html#projelerimiz"><b>Projelerimiz</b></a>
+                <a href="./index.html#başarılarımız"><b>Başarılarımız</b></a>
+                <a href="./index.html#iletişim"><b>İletişim</b></a>
+            </div>
+
+            <div class="top-right">
+                <a href="./index.html"><b>Ana Sayfa</b></a>
+                <a href="#" id="menubutton"><b>...</b></a>
+            </div>
+
+        </div>
+
+        <div class="katilsite">
+            <p class="aday-header">Aday Başvuru Formu</p>
+            <form class="adayformu" action="addcolunteer.php" method="post">
+                <div>
+                    <p>E-posta adresinizi yazınız:</p>
+                    <input type="email" id="email" name="email" placeholder="info@afsuamrd.com" required>
+                </div>
+                <div>
+                    <p>Adınızı ve soyadınızı yazınız:</p>
+                    <input type="text" id="adsoyad" name="adsoyad" placeholder="Yunus Emre Kuşin" required >
+                </div>
+                <div>
+                    <p>Telefon numaranızı yazınız:</p>
+                    <input type="tel" id="phone" name="phone" placeholder="0507 800 20 12" required >
+                </div>
+                <div>
+                    <p>Halihazırda okuduğunuz bölümünüzü seçiniz:</p>
+                    <select id="bolum" name="bolum" required>
+                        <option value="eem">Elektrik Elektronik Mühendisliği</option>
+                        <option value="me">Makine Mühendisliği</option>
+                        <option value="mec">Mekatronik Mühendisliği</option>
+                        <option value="ceng">Bilgisayar Mühendisliği</option>
+                        <option value="biyom">Biyomedikal Mühendisliği</option>
+                        <option value="malzeme">Metalurji ve Malzeme Mühendisliği</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Halihazırda okuduğunuz sınıfınızı seçiniz:</p>
+                    <select id="sinif" name="sinif" required>
+                        <option value="hazırlık">Hazırlık</option>
+                        <option value="birinci">1. Sınıf</option>
+                        <option value="ikinci">2. Sınıf</option>
+                        <option value="üçüncü">3. Sınıf</option>
+                        <option value="dördüncü">4. Sınıf</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Bildiğiniz yazılım dillerini seçiniz:</p>
+                    <input type="checkbox" id="c" name="diller[]" value="c">
+                    <label for="c">C</label><br>
+                    <input type="checkbox" id="cpp" name="diller[]" value="cpp">
+                    <label for="cpp">C++</label><br>
+                    <input type="checkbox" id="python" name="diller[]" value="python">
+                    <label for="python">Python</label><br>
+                    <input type="checkbox" id="java" name="diller[]" value="java">
+                    <label for="java">Java</label><br>
+                    <input type="checkbox" id="csharp" name="diller[]" value="csharp">
+                    <label for="csharp">C#</label><br>
+                    <input type="checkbox" id="html" name="diller[]" value="html">
+                    <label for="html">Html</label><br>
+                    <br>
+                    <input type="text" id="software" name="software" placeholder="Diğer:">
+                </div>
+                <div>
+                    <p>Varsa daha önceden katıldığınız projeler ve aldığınız görevlerden bahsediniz:</p>
+                    <input type="text" id="projects" name="projects" placeholder="Teknofest, Tübitak, Kosgeb vs.">
+                </div>
+                <div>
+                    <p>Haftada kaç saat laboratuvarda bulunabilirsiniz:</p>
+                    <select id="saat" name="saat" required>
+                        <option value="0-7saat">0 - 7 Saat</option>
+                        <option value="7-9saat">7 - 9 Saat</option>
+                        <option value="9-12saat">9 - 12 Saat</option>
+                        <option value="12-15saat">12 - 15 Saat</option>
+                        <option value="15üstü">15+</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Yer almak istediğiniz takımımız:</p>
+                    <input type="checkbox" id="agv" name="takim[]" value="agv">
+                    <label for="agv">AGV</label><br>
+                    <input type="checkbox" id="ika" name="takim[]" value="ika">
+                    <label for="ika">İKA</label><br>
+                </div>
+                <div>
+                    <p>Takımımızdan beklentileriniz nedir?</p>
+                    <input type="text" id="beklenti" name="beklenti" placeholder="Kendimi elektronik ve yazılım alanında geliştirmek için katıldım." required>
+                </div>
+                <br>
+                <input type="submit" name="basvur" value="Başvur">
+            </form>
+        </div>
+    </div>
+    <script src="menu.js"></script>
+</body>
+</html>
